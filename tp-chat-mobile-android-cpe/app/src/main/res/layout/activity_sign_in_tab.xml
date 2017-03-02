@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.UI.Sign_inTabActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="#ecf0f1"
+        android:elevation="0dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TabWidget>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_main"
+            android:text="@string/username"/>
+
+        <EditText
+            style="@style/edittext_main"
+            android:id="@+id/username"/>
+
+        <TextView
+            style="@style/text_main"
+            android:text="@string/password"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            style="@style/edittext_main"
+            android:inputType="textPassword"
+            android:id="@+id/password"/>
+
+        <TextView
+            style="@style/text_main"
+            android:text="Birth date"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_month"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/dropdown_custom"
+                android:spinnerMode="dropdown"
+                android:entries="@array/spinnerMonth"/>
+
+            <Spinner
+                android:id="@+id/spinner_day"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/dropdown_custom"
+                android:spinnerMode="dropdown"
+                android:entries="@array/spinnerDay"/>
+
+            <Spinner
+                android:id="@+id/spinner_year"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/dropdown_custom"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/text_main"
+            android:text="Email address"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            style="@style/edittext_main"
+            android:id="@+id/email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:clickable="true"
+            android:layout_marginTop="15dp"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:text="By clicking on submit you aggree the terms and conditions and the confidentiality policy"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/cancel"
+                android:background="@drawable/imagebtn_cancel_selector"/>
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/login"
+                android:background="@drawable/imagebtn_submit_selector"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/transparentOverlaySignIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <ProgressBar
+            android:id="@+id/mainProgressBarSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

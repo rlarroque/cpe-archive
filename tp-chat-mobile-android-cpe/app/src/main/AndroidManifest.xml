@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thuranos_reiki.mobile_dev_project" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.example.UI.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.UI.LoginTabActivity"
+            android:label="@string/title_activity_login_tab" >
+        </activity>
+        <activity
+            android:name="com.example.UI.Sign_inTabActivity"
+            android:label="@string/title_activity_sign_in_tab" >
+        </activity>
+        <activity
+            android:name="com.example.UI.SplashScreenActivity"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.UI.HomeActivity"
+            android:label="@string/title_activity_home2" >
+        </activity>
+    </application>
+
+</manifest>

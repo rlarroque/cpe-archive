@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.UI.HomeActivity">
+
+    <item
+        android:title="Logout"
+        android:id="@+id/logout">
+    </item>
+</menu>

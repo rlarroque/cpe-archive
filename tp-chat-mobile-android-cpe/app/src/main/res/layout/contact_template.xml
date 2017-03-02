@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/user_icon"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/contact_info_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:id="@+id/contact_username"
+            android:text="Username will be displayed here"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/contact_lastest_msg_title"
+            android:text="Latest message: "
+            android:layout_below="@id/contact_username"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/contact_lastest_msg"
+            android:text="Latest message will be displayed here"
+            android:layout_toRightOf="@id/contact_lastest_msg_title"
+            android:layout_below="@id/contact_username"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

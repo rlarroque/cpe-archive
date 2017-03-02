@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Mobile_Dev_Project</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_message_tab">MessageTabActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_contact_tab">ContactTabActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_sign_in">Sign_inActivity</string>
+    <string name="title_activity_login_tab">LoginTabActivity</string>
+    <string name="title_activity_sign_in_tab">Sign_inTabActivity</string>
+    <string name="title_activity_splash_screen">Awesome chat</string>
+    
+    <string name="login_error">Cannot login</string>
+    <string name="login_success">Successfully logged in!</string>
+    <string name="signin_error">Cannot sign in, try again later</string>
+    <string name="signin_error_exist">This username already exist</string>
+    <string name="signin_error_empty">Username and password are mandatory</string>
+
+    <string name="message_sent">Message sent !</string>
+    <string name="message_not_sent">Failed to send the message</string>
+    <string name="no_message">There is nothing to send</string>
+    <string name="signin_success">Signed in</string>
+
+    <string name="URL">http://training.loicortola.com/chat-rest/2.0</string>
+    <string name="title_activity_activity_loading_screen">activity_loading_screen</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_home2">Home2Activity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

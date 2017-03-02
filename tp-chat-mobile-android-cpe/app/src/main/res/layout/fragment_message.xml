@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ecf0f1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:id="@+id/messages"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/button_click_state"
+            android:id="@+id/send_attach_file_layout"
+            android:layout_alignParentBottom="true">
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/paper_clip"
+                android:id="@+id/send_attach_file"/>
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/postChat"
+            android:layout_toEndOf="@+id/send_attach_file_layout"
+            android:layout_toStartOf="@+id/sendButton_layout"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:inputType="textCapSentences|textMultiLine"
+            android:clickable="true"
+            android:backgroundTint="@android:color/transparent"
+            android:textColorHint="@color/gray"
+            android:hint="Type here"
+            android:maxLines="4"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/sendButton_layout"
+            android:background="@drawable/button_click_state"
+            android:clickable="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true">
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/sendButton"
+                android:background="@drawable/send"
+                android:layout_marginBottom="10dp"/>
+
+            </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_above="@id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:elevation="0dp"/>
+
+    <!-- ici on va mettre tous les messages -->
+    <ListView
+        android:id="@+id/listMessages"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:stackFromBottom="true"
+        android:divider="@null"
+        android:background="@android:color/transparent"
+        android:layout_above="@id/separator"/>
+
+</RelativeLayout>
+
+
+
